@@ -1,0 +1,235 @@
+<html>
+	 <head>
+		 <style type="text/css">
+			 #indextable { 
+				 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+				 border-collapse: collapse; 
+			 } 
+			 #indextable td { 
+				 border: 1px solid #ddd; 
+				 padding: 6px; 
+			 } 
+			 #indextable tr:nth-child(even){background-color: #f2f2f2;} 
+			 #indextable tr:hover {background-color: #ddd;}
+			 #indextable td:hover {background-color: #119; color: white;}
+			 .button { 
+			 background-color: white; 
+			 color: black; 
+			 border: 2px solid #555555; 
+			 border-radius: 10%; 
+			 padding: 16px 32px; 
+			 text-align: center; 
+			 text-decoration: none; 
+			 display: inline-block; 
+			 font-size: 16px; 
+			 margin: 4px 2px; 
+			 -webkit-transition-duration: 0.2s; 
+			 transition-duration: 0.4s; 
+			 cursor: pointer; 
+			 } 
+			 .button:hover { 
+			 background-color: #555555; 
+			 color: white; 
+			 } 
+		 </style>
+		 <script>
+			 function popPic() {picDisplayed = window.open(document.DIST.src, document.DIST.src,'statusbar=no, scrollbars=auto, status=no, resizable=no, width=1050, height=1050');}
+			 function showPic(row, col)
+			 {
+			    var dist = "img/"
+			    dist += "cut-"
+			    dist += row;
+			    dist += "_"
+			    dist += "sector-"
+			    dist += col;
+			    dist += ".png"
+			    document.DIST.src = dist
+			 }
+		 </script>
+	 </head>
+	 <body>
+		 <center>
+			 <table cellpadding=10> 
+				 <tr> 
+					 <td> 
+						 <table id="indextable" class="indextable"> 
+							 <tr> 
+								 <td> <sub> cut</sub> <sup> sector</sup> </td>
+								 <td>1</td>
+								 <td>2</td>
+								 <td>3</td>
+								 <td>4</td>
+								 <td>5</td>
+								 <td>6</td>
+								 <td>all</td>
+							 </tr> 
+							 <tr> 
+								 <td>01ccthm</td>
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthm', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>01ccthmd</td>
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('01ccthmd', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>01cctmpars</td>
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('01cctmpars', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>02ccphi</td>
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('02ccphi', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>03cctim</td>
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctim', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>03cctimd</td>
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('03cctimd', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>04pthr</td>
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('04pthr', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>05sampf</td>
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampf', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>05sampfd</td>
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('05sampfd', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>06ECU</td>
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('06ECU', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>07ECV</td>
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('07ECV', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>08ECW</td>
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('08ECW', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>09uvw</td>
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('09uvw', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>10EoVsEi</td>
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('10EoVsEi', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>11EoOEtot</td>
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('11EoOEtot', 'all')" />
+							 </tr> 
+							 <tr> 
+								 <td>12nphe</td>
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', '6')" />
+								 <td onclick="popPic()" onmouseover="showPic('12nphe', 'all')" />
+							 </tr> 
+						 </table> 
+					 </td> 
+					 <td> 
+						 <img name = "DIST" width="650px" src="img/cut-09uvw_sector-all.png"/> 
+					 </td> 
+				 </tr> 
+			 </table> 
+		 </center>
+	 </body>
+</html>
