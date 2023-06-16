@@ -1,0 +1,309 @@
+<html>
+	 <head>
+		 <style type="text/css">
+			 #indextable { 
+				 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+				 border-collapse: collapse; 
+			 } 
+			 #indextable td { 
+				 border: 1px solid #ddd; 
+				 padding: 6px; 
+			 } 
+			 #indextable tr:nth-child(even){background-color: #f2f2f2;} 
+			 #indextable tr:hover {background-color: #ddd;}
+			 #indextable td:hover {background-color: #119; color: white;}
+			 .button { 
+			 background-color: white; 
+			 color: black; 
+			 border: 2px solid #555555; 
+			 border-radius: 10%; 
+			 padding: 16px 32px; 
+			 text-align: center; 
+			 text-decoration: none; 
+			 display: inline-block; 
+			 font-size: 16px; 
+			 margin: 4px 2px; 
+			 -webkit-transition-duration: 0.2s; 
+			 transition-duration: 0.4s; 
+			 cursor: pointer; 
+			 } 
+			 .button:hover { 
+			 background-color: #555555; 
+			 color: white; 
+			 } 
+		 </style>
+		 <script>
+			 function popPic() {picDisplayed = window.open(document.DIST.src, document.DIST.src,'statusbar=no, scrollbars=auto, status=no, resizable=no, width=1250, height=1250');}
+			 var sector = "1";
+			 function showPic(row, col)
+			 {
+			    var dist = "img_slices/"
+			    dist += "slice-"
+			    dist += row;
+			    dist += "_"
+			    dist += "cut-"
+			    dist += col;
+			    dist += "_sector-";
+			    dist += sector;
+			    dist += ".png"
+			    document.DIST.src = dist
+			 }
+			 function changesector()
+			 {
+				 var sectorTitle = "sector " ;
+				 sectorTitle += sector;
+				 document.getElementById("sectorButtons").innerHTML = sectorTitle;
+			 }
+		 </script>
+	 </head>
+	 <body>
+		 <center>
+			 <table cellpadding=10> 
+				 <tr> 
+					 <td colspan=2> 
+						 <table> <tr>
+							 <td id="sectorButtons" align=center colspan=6>sector 1</td></tr><tr>
+							 <td><button class="button" onclick="javascript:sector='1' ; changesector(); ">1</button></td>
+							 <td><button class="button" onclick="javascript:sector='2' ; changesector(); ">2</button></td>
+							 <td><button class="button" onclick="javascript:sector='3' ; changesector(); ">3</button></td>
+							 <td><button class="button" onclick="javascript:sector='4' ; changesector(); ">4</button></td>
+							 <td><button class="button" onclick="javascript:sector='5' ; changesector(); ">5</button></td>
+							 <td><button class="button" onclick="javascript:sector='6' ; changesector(); ">6</button></td>
+						 </tr></table>
+					 </td> 
+				 </tr> 
+				 <tr> 
+					 <td> 
+						 <table id="indextable" class="indextable"> 
+							 <tr> 
+								 <td> <sub> slice</sub> <sup> cut</sup> </td>
+								 <td>01-ts</td>
+								 <td>03-tim</td>
+								 <td>05-sf</td>
+							 </tr> 
+							 <tr> 
+								 <td>01</td>
+								 <td onclick="popPic()" onmouseover="showPic('01', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('01', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('01', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>02</td>
+								 <td onclick="popPic()" onmouseover="showPic('02', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('02', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('02', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>03</td>
+								 <td onclick="popPic()" onmouseover="showPic('03', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>04</td>
+								 <td onclick="popPic()" onmouseover="showPic('04', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>05</td>
+								 <td onclick="popPic()" onmouseover="showPic('05', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>06</td>
+								 <td onclick="popPic()" onmouseover="showPic('06', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>07</td>
+								 <td onclick="popPic()" onmouseover="showPic('07', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>08</td>
+								 <td onclick="popPic()" onmouseover="showPic('08', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>09</td>
+								 <td onclick="popPic()" onmouseover="showPic('09', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>10</td>
+								 <td onclick="popPic()" onmouseover="showPic('10', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>11</td>
+								 <td onclick="popPic()" onmouseover="showPic('11', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>12</td>
+								 <td onclick="popPic()" onmouseover="showPic('12', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>13</td>
+								 <td onclick="popPic()" onmouseover="showPic('13', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('13', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('13', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>14</td>
+								 <td onclick="popPic()" onmouseover="showPic('14', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('14', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('14', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>15</td>
+								 <td onclick="popPic()" onmouseover="showPic('15', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('15', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('15', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>16</td>
+								 <td onclick="popPic()" onmouseover="showPic('16', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('16', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('16', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>17</td>
+								 <td onclick="popPic()" onmouseover="showPic('17', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('17', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('17', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>18</td>
+								 <td onclick="popPic()" onmouseover="showPic('18', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('18', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('18', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>19</td>
+								 <td onclick="popPic()" onmouseover="showPic('19', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('19', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('19', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>20</td>
+								 <td onclick="popPic()" onmouseover="showPic('20', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('20', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('20', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>21</td>
+								 <td onclick="popPic()" onmouseover="showPic('21', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('21', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('21', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>22</td>
+								 <td onclick="popPic()" onmouseover="showPic('22', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('22', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('22', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>23</td>
+								 <td onclick="popPic()" onmouseover="showPic('23', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('23', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('23', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>24</td>
+								 <td onclick="popPic()" onmouseover="showPic('24', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('24', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('24', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>25</td>
+								 <td onclick="popPic()" onmouseover="showPic('25', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('25', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('25', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>26</td>
+								 <td onclick="popPic()" onmouseover="showPic('26', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('26', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('26', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>27</td>
+								 <td onclick="popPic()" onmouseover="showPic('27', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('27', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('27', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>28</td>
+								 <td onclick="popPic()" onmouseover="showPic('28', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('28', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('28', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>29</td>
+								 <td onclick="popPic()" onmouseover="showPic('29', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('29', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('29', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>30</td>
+								 <td onclick="popPic()" onmouseover="showPic('30', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('30', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('30', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>31</td>
+								 <td onclick="popPic()" onmouseover="showPic('31', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('31', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('31', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>32</td>
+								 <td onclick="popPic()" onmouseover="showPic('32', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('32', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('32', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>33</td>
+								 <td onclick="popPic()" onmouseover="showPic('33', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('33', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('33', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>34</td>
+								 <td onclick="popPic()" onmouseover="showPic('34', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('34', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('34', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>35</td>
+								 <td onclick="popPic()" onmouseover="showPic('35', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('35', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('35', '05-sf')" />
+							 </tr> 
+							 <tr> 
+								 <td>36</td>
+								 <td onclick="popPic()" onmouseover="showPic('36', '01-ts')" />
+								 <td onclick="popPic()" onmouseover="showPic('36', '03-tim')" />
+								 <td onclick="popPic()" onmouseover="showPic('36', '05-sf')" />
+							 </tr> 
+						 </table> 
+					 </td> 
+					 <td> 
+						 <img name = "DIST" width="650px" src="img_slices/slice-01_cut-01-ts_sector-1.png"/> 
+					 </td> 
+				 </tr> 
+			 </table> 
+		 </center>
+	 </body>
+</html>
